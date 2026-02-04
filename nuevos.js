@@ -54,7 +54,7 @@ const carros = [
         imagen: "imgnuevos/73f00378-a396-5013-a056-55fec6950000.avif"
     },
     {
-        nombre: "Toyota Land Cruiser 2023 Limited",
+        nombre: "Toyota Land Cruiser 2024 Limited",
         año: 2024,
         precio: "$70,000 USD",
         estado: "Nuevo",
@@ -229,3 +229,4 @@ function aplicarFiltros() {
         }
     });
 }
+

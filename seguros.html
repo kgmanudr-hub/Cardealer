@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="seguros.css">
+</head>
+<body>
+
+<header class="header">
+
+  <div class="logo" onclick="toggleMenu()">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="menu" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="carros.html">Vehículos Nuevos</a>
+    <a href="carrosusados.html">Vehículos Usados</a>
+    <a href="vidcarros.html">Videos de los Vehículos</a>
+    <a href="infFinancing.html">Información de Financiamiento</a>
+    <a href="seguros.html">Seguros</a>
+  </nav>
+
+</header>
+
+    <div class="contenedor">
+
+  <div class="lista">
+
+    <div class="card" onclick="verAseguradora('anglo')">
+      <img src="seguros/159691177301.png" alt="Angloamericana">
+      <h3>Angloamericana de Seguros</h3>
+    </div>
+
+    <div class="card" onclick="verAseguradora('atlantica')">
+      <img src="seguros/159691350202.jpeg" alt="Atlántica">
+      <h3>Atlántica Seguros</h3>
+    </div>
+
+    <div class="card" onclick="verAseguradora('AutoSeguro')">
+      <img src="seguros/159691515003.png" alt="AutoSeguro">
+      <h3>Auto Seguro</h3>
+    </div>
+
+    <div class="card" onclick="verAseguradora('Confedom')">
+      <img src="seguros/159691556404.jpeg" alt="Confedom">
+      <h3>Confedom Seguros</h3>
+    </div>
+
+     <div class="card" onclick="verAseguradora('Coopeseguros')">
+      <img src="seguros/159691593105.jpeg" alt="Coopeseguros">
+      <h3>Coopeseguros</h3>
+    </div>
+    <div class="card" onclick="verAseguradora('LaComercialDeSeguros')">
+      <img src="seguros/159761100616 (1).jpeg" alt="LaComercialDeSeguro">
+      <h3>La Comercial de Seguros</h3>
+    </div>
+
+    
+     <div class="card" onclick="verAseguradora('dominicanaSeguros')">
+      <img src="seguros/159691603306.png" alt="dominicanaSeguros">
+      <h3>dominicana compañia de seguros</h3>
+    </div>
+    <div class="card" onclick="verAseguradora('MapfreBHDSeguros')">
+      <img src="seguros/159761178318.png" alt="MapfreBHDSeguros">
+      <h3>Mapfre BHD Seguros</h3>
+    </div>
+
+  </div>
+
+  
+  <div class="detalle" id="detalle">
+    <p>Selecciona una aseguradora para ver la información</p>
+  </div>
+
+</div>
+<script src="seguros.js"></script>
+</body>
+</html>

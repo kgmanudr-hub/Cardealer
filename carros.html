@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo | Dealer</title>
+    <link rel="stylesheet" href="nuevos.css">
+</head>
+<body>
+
+    <header class="menu-header">
+  <div class="logo" onclick="toggleMenu()">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="menu" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="carros.html">Vehículos Nuevos</a>
+    <a href="carrosusados.html">Vehículos Usados</a>
+    <a href="vidcarros.html">Videos de los Vehículos</a>
+    <a href="infFinancing.html">Información de Financiamiento</a>
+    <a href="seguros.html">Seguros</a>
+  </nav>
+</header>
+
+<header class="header">
+
+        <nav class="filtro">
+    <div>
+        <label for="marca">Marca:</label>
+        <select id="marca" onchange="aplicarFiltros()">
+            <option value="">Todas</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Dodge">Dodge</option>
+            <option value="BMW">BMW</option>
+            <option value="Kia">Kia</option>
+        </select>
+    </div>
+    <div>
+</nav>
+
+    <h1>Catálogo de Vehículos</h1>
+    <p>Encuentra tu próximo carro</p>
+
+</header>
+
+<section class="catalogo" id="catalogo"></section>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <img id="modal-img">
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-info"></p>
+        <p id="modal-precio"></p>
+    </div>
+</div>
+
+
+
+<script src="nuevos.js"></script>
+
+<footer>
+    © 2026 Diamond Motors | Financiamiento en USD – República Dominicana
+</footer>
+
+</body>
+</html>
